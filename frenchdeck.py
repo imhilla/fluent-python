@@ -22,13 +22,35 @@ print(beer_card)
 
 deck = FrenchDeck()
 print(deck)
-print(len(deck))
-print(deck[13])
-print(deck[-1])
+# print(len(deck))
+print(deck[13].rank, 'rank')
+# print(deck[-1])
+#
+# from random import choice
+#
+# print(choice(deck))
+#
+# print(deck[:3])
+# print(deck[12::13])
+#
+# for card in deck:
+#     print(card)
+#
+#
+# for card in reversed(deck):
+#     print(card)
+#
+# var = Card('Q', 'hearts') in deck
+# print(var)
+#
 
-from random import choice
+suit_values = dict(spades=3, hearts=2, diamonds=1, clubs=0)
 
-print(choice(deck))
 
-print(deck[:3])
-print(deck[12::13])
+def spades_high(card):
+    rank_value = FrenchDeck.ranks.index(card.rank)
+    return rank_value * len(suit_values) + suit_values[card.suit]
+
+
+for card in sorted(deck, key=spades_high):
+    print(card)

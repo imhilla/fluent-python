@@ -196,3 +196,34 @@ print(my_set)
 
 # hash maps
 my_map = {}
+my_map['alice'] = 88
+my_map['bob'] = 77
+
+
+print(my_map)
+print(len(my_map))
+
+my_map['alice'] = 80
+print(my_map)
+print('alice' in my_map)
+
+# dict comprehension
+my_map = {i: 2*i for i in range(3)}
+print(my_map)
+
+# looping through maps
+my_map = {"alice": 90, "bob": 70}
+
+for key in my_map:
+    print(key)
+    print(my_map[key])
+
+
+for val in my_map.values():
+    print(val)
+
+
+for key, val in my_map.items():
+  print(key, val)
+
+print(my_map.items())

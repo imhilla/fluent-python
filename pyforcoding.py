@@ -1,4 +1,6 @@
 # variables
+from multiprocessing import heap
+import math
 n = 0
 print('n =', n)
 
@@ -43,3 +45,31 @@ for i in range(5):
 
 for i in range(2, 6):
     print(i)
+
+# loop in reverse order
+for i in range(5, 1, -1):
+    print(i)
+
+
+# math
+print(5/2)
+print(5//2)
+print(-3//2)
+print(int(-3/2))
+
+print(10 % 3)
+print(-10 % 3)
+
+# to be consistent with other math modulo
+
+print(math.fmod(-10, 3))
+
+print(math.floor(3/2))
+print(math.ceil(3/2))
+print(math.sqrt(2))
+print(math.pow(2, 3))
+
+print(float("inf"))
+print(float("-inf"))
+
+print(math.pow(2, 200))

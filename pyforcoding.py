@@ -272,3 +272,40 @@ heapq.heapify(arr)
 
 while arr:
     print(heapq.heappop(arr))
+
+# functions
+
+
+def my_func(n, m):
+    return n*m
+
+
+print(my_func(2, 4))
+
+
+def outer(a, b):
+    c = 'c'
+
+    def inn():
+        return a + b + c
+    return inn()
+
+
+print(outer("a", "b"))
+
+
+def double(arr, val):
+    def helper():
+        for i, n in enumerate(arr):
+            arr[i] *= 2
+        nonlocal val
+        val *= 2
+    helper()
+    print(arr, val)
+
+
+nums = [1, 2, 3]
+val = 3
+
+
+double(nums, val)

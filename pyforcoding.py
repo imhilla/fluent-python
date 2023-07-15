@@ -309,3 +309,23 @@ val = 3
 
 
 double(nums, val)
+
+# classes
+
+
+class myClass:
+    # constructor
+    def __init__(self, nums):
+        self.nums = nums
+        self.size = len(nums)
+
+    def getLength(self):
+        return self.size
+
+    def getDoubleLength(self):
+        return 2 * self.getLength()
+
+
+my_obj = myClass([1, 2, 3])
+print(my_obj.getLength())
+print(my_obj.getDoubleLength())

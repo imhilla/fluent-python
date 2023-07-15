@@ -73,3 +73,69 @@ print(float("inf"))
 print(float("-inf"))
 
 print(math.pow(2, 200))
+print(math.pow(2, 200) > float("inf"))
+
+# Arrays
+arr = [1, 2, 3]
+print(arr)
+
+arr.append(4)
+arr.append(5)
+print(arr)
+
+
+arr.pop()
+print(arr)
+
+arr.insert(1, 7)
+print(arr)
+
+arr[0] = 0
+print(arr)
+
+n = 5
+arr = [1] * n
+print(arr)
+
+arr = [1, 2, 3]
+print(arr[-1])
+
+arr = [1, 2, 3, 4]
+print(arr[1:3])
+
+print(arr[0:4])
+
+a, b, c = [1, 2, 3]
+print(a, b, c)
+
+print(zip([1, 2, 3], [3, 4, 5]))
+
+for n1, n2 in zip([1, 2, 3], [3, 4, 5]):
+    print(n1, n2)
+
+
+nums = [1, 2, 3, 4, 5]
+nums.reverse()
+print(nums)
+
+arr = [5, 7, 2, 8, 4, 70]
+arr.sort()
+print(arr)
+
+
+arr.sort(reverse=True)
+print(arr)
+
+arr = ['bob', 'alice', 'jane', 'doe']
+print(arr.sort())
+print(arr)
+
+arr.sort(key=lambda x: len(x))
+print(arr)
+
+# list comprehension
+arr = [i for i in range(5)]
+print(arr)
+
+arr = [[0] * 4 for i in range(4)]
+print(arr)

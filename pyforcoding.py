@@ -1,4 +1,5 @@
 # variables
+import heapq
 from collections import deque
 from multiprocessing import heap
 import math
@@ -239,3 +240,35 @@ my_set = set()
 my_set.add((1, 2))
 print(my_set)
 print((1, 2) in my_set)
+
+
+minHeap = []
+heapq.heappush(minHeap, 3)
+heapq.heappush(minHeap, 4)
+heapq.heappush(minHeap, 2)
+
+print(minHeap)
+print(minHeap[0])
+
+while len(minHeap):
+    print(heapq.heappop(minHeap))
+
+# no max heap by default work around is
+# to use min heap and multiply by -1 when push and pop
+
+maxHeap = []
+heapq.heappush(maxHeap, -3)
+heapq.heappush(maxHeap, -2)
+heapq.heappush(maxHeap, -4)
+
+print(maxHeap[0] * -1)
+
+while len(maxHeap):
+    print(-1 * heapq.heappop(maxHeap))
+
+
+arr = [2, 1, 8, 4, 5]
+heapq.heapify(arr)
+
+while arr:
+    print(heapq.heappop(arr))

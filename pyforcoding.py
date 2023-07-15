@@ -139,3 +139,16 @@ print(arr)
 
 arr = [[0] * 4 for i in range(4)]
 print(arr)
+
+# strings
+s = 'abc'
+print(s[0:2])
+
+# s[0] =  'A' error
+# print(s)
+s += 'def'
+print(s)
+
+strings = ["ab", "cd", "ef"]
+print("".join(strings))
+

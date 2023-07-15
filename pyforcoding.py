@@ -224,6 +224,18 @@ for val in my_map.values():
 
 
 for key, val in my_map.items():
-  print(key, val)
+    print(key, val)
 
 print(my_map.items())
+
+# tuples
+tup = (1, 2, 3)
+print(tup[0])
+
+my_map = {(1, 2): 3}
+print(my_map)
+
+my_set = set()
+my_set.add((1, 2))
+print(my_set)
+print((1, 2) in my_set)

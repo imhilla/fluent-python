@@ -326,8 +326,8 @@ class myClass:
         return 2 * self.getLength()
 
 
-my_obj = myClass([1, 2, 3])
-print(my_obj.getLength())
-print(my_obj.getDoubleLength())
+# my_obj = myClass([1, 2, 3])
+# print(my_obj.getLength())
+# print(my_obj.getDoubleLength())
 
 # https://neetcode.io/courses/lessons/python-for-coding-interviews
